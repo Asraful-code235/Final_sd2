@@ -39,6 +39,22 @@ namespace WindowsFormsApp1
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.stdlv = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Teacherlv = new System.Windows.Forms.Label();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Departmentlv = new System.Windows.Forms.Label();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Feeslv = new System.Windows.Forms.Label();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Userlv = new System.Windows.Forms.Label();
+            this.guna2GradientPanel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientButton1
@@ -168,6 +184,11 @@ namespace WindowsFormsApp1
             // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel5);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel4);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel3);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel2);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel1);
             this.guna2GradientPanel1.Location = new System.Drawing.Point(219, 24);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
@@ -205,6 +226,111 @@ namespace WindowsFormsApp1
             this.guna2GradientButton6.Text = "Users";
             this.guna2GradientButton6.Click += new System.EventHandler(this.guna2GradientButton6_Click);
             // 
+            // stdlv
+            // 
+            this.stdlv.AutoSize = true;
+            this.stdlv.BackColor = System.Drawing.Color.Transparent;
+            this.stdlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
+            this.stdlv.ForeColor = System.Drawing.Color.Blue;
+            this.stdlv.Location = new System.Drawing.Point(49, 31);
+            this.stdlv.Name = "stdlv";
+            this.stdlv.Size = new System.Drawing.Size(34, 32);
+            this.stdlv.TabIndex = 0;
+            this.stdlv.Text = "0";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.stdlv);
+            this.guna2Panel1.Location = new System.Drawing.Point(25, 3);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(134, 99);
+            this.guna2Panel1.TabIndex = 1;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.Teacherlv);
+            this.guna2Panel2.Location = new System.Drawing.Point(235, 3);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(134, 99);
+            this.guna2Panel2.TabIndex = 2;
+            // 
+            // Teacherlv
+            // 
+            this.Teacherlv.AutoSize = true;
+            this.Teacherlv.BackColor = System.Drawing.Color.Transparent;
+            this.Teacherlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
+            this.Teacherlv.ForeColor = System.Drawing.Color.Blue;
+            this.Teacherlv.Location = new System.Drawing.Point(49, 31);
+            this.Teacherlv.Name = "Teacherlv";
+            this.Teacherlv.Size = new System.Drawing.Size(34, 32);
+            this.Teacherlv.TabIndex = 0;
+            this.Teacherlv.Text = "0";
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.Departmentlv);
+            this.guna2Panel3.Location = new System.Drawing.Point(25, 138);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(134, 99);
+            this.guna2Panel3.TabIndex = 2;
+            // 
+            // Departmentlv
+            // 
+            this.Departmentlv.AutoSize = true;
+            this.Departmentlv.BackColor = System.Drawing.Color.Transparent;
+            this.Departmentlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
+            this.Departmentlv.ForeColor = System.Drawing.Color.Blue;
+            this.Departmentlv.Location = new System.Drawing.Point(49, 31);
+            this.Departmentlv.Name = "Departmentlv";
+            this.Departmentlv.Size = new System.Drawing.Size(34, 32);
+            this.Departmentlv.TabIndex = 0;
+            this.Departmentlv.Text = "0";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Controls.Add(this.Feeslv);
+            this.guna2Panel4.Location = new System.Drawing.Point(235, 138);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(134, 99);
+            this.guna2Panel4.TabIndex = 2;
+            // 
+            // Feeslv
+            // 
+            this.Feeslv.AutoSize = true;
+            this.Feeslv.BackColor = System.Drawing.Color.Transparent;
+            this.Feeslv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
+            this.Feeslv.ForeColor = System.Drawing.Color.Blue;
+            this.Feeslv.Location = new System.Drawing.Point(49, 31);
+            this.Feeslv.Name = "Feeslv";
+            this.Feeslv.Size = new System.Drawing.Size(34, 32);
+            this.Feeslv.TabIndex = 0;
+            this.Feeslv.Text = "0";
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.Controls.Add(this.Userlv);
+            this.guna2Panel5.Location = new System.Drawing.Point(399, 79);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(134, 99);
+            this.guna2Panel5.TabIndex = 2;
+            // 
+            // Userlv
+            // 
+            this.Userlv.AutoSize = true;
+            this.Userlv.BackColor = System.Drawing.Color.Transparent;
+            this.Userlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
+            this.Userlv.ForeColor = System.Drawing.Color.Blue;
+            this.Userlv.Location = new System.Drawing.Point(49, 31);
+            this.Userlv.Name = "Userlv";
+            this.Userlv.Size = new System.Drawing.Size(34, 32);
+            this.Userlv.TabIndex = 0;
+            this.Userlv.Text = "0";
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -222,6 +348,18 @@ namespace WindowsFormsApp1
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Interface";
             this.Text = "Interface";
+            this.Load += new System.EventHandler(this.Interface_Load);
+            this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel4.PerformLayout();
+            this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -235,5 +373,15 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
+        private System.Windows.Forms.Label stdlv;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private System.Windows.Forms.Label Userlv;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private System.Windows.Forms.Label Feeslv;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private System.Windows.Forms.Label Departmentlv;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Label Teacherlv;
     }
 }

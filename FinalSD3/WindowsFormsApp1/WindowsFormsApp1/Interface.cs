@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -16,6 +17,8 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        SqlConnection con = new SqlConnection(@"Data Source=ASRAFUL;Initial Catalog=Sd2;Integrated Security=True");
+        SqlCommand cmd;
 
         private void Home_Click(object sender, EventArgs e)
         {
@@ -153,6 +156,32 @@ namespace WindowsFormsApp1
             Teacher teach = new Teacher();
             teach.Show();
             this.Hide();
+        }
+
+        private void Interface_Load(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlDataAdapter sda1 = new SqlDataAdapter("select count(*)from StudentTb1", con);
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            stdlv.Text = dt1.Rows[0][0].ToString();
+            SqlDataAdapter sda2 = new SqlDataAdapter("select count(*)from TeacherTb1", con);
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+            Teacherlv.Text = dt2.Rows[0][0].ToString();
+            SqlDataAdapter sda3 = new SqlDataAdapter("select count(*)from DepartmentTb1", con);
+            DataTable dt3 = new DataTable();
+            sda3.Fill(dt3);
+            Departmentlv.Text = dt3.Rows[0][0].ToString();
+            SqlDataAdapter sda4 = new SqlDataAdapter("select count(*)from FeesTb1", con);
+            DataTable dt4 = new DataTable();
+            sda4.Fill(dt4);
+            Feeslv.Text = dt4.Rows[0][0].ToString();
+            SqlDataAdapter sda5 = new SqlDataAdapter("select count(*)from UserTable", con);
+            DataTable dt5 = new DataTable();
+            sda5.Fill(dt5);
+            Userlv.Text = dt5.Rows[0][0].ToString();
+            con.Close();
         }
     }
 }
