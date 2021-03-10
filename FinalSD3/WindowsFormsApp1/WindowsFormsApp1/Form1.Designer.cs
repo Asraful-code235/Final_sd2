@@ -224,7 +224,7 @@ namespace WindowsFormsApp1
             this.Userpassword2.Location = new System.Drawing.Point(169, 108);
             this.Userpassword2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Userpassword2.Name = "Userpassword2";
-            this.Userpassword2.PasswordChar = '\0';
+            this.Userpassword2.PasswordChar = '*';
             this.Userpassword2.PlaceholderText = "Enter ID";
             this.Userpassword2.SelectedText = "";
             this.Userpassword2.ShadowDecoration.Parent = this.Userpassword2;
